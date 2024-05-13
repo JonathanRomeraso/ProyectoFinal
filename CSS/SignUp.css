@@ -1,0 +1,901 @@
+/*For Prealoder*/
+/**************************************
+
+Template Name: Xmee | Login and Register Form Html Templates
+Template URL: http://html.affixtheme.com/html/xmee
+Description: Creative & Exclusive Login Registration Template
+Author: AffixTheme
+Author URL: https://themeforest.net/user/affixtheme
+Version: 2.0 
+
+======================================  
+        Table Of Contents
+======================================
+1. Typography
+2. Template Default Style
+3. Template Animation
+4. Demo Layout One
+5. Demo Layout Two
+6. Demo Layout Three
+7. Demo Layout Four
+8. Demo Layout Five
+9. Demo Layout Six
+10. Demo Layout Seven
+11. Demo Layout Eight
+12. Demo Layout Nine
+13. Demo Layout Ten
+14. Demo Layout Eleven
+15. Demo Layout Twelve
+16. Demo Layout Thirteen
+17. Demo Layout Fourteen
+18. Demo Layout Fifteen
+19. Demo Layout Sixteen
+20. Demo Layout Seventeen
+21. Demo Layout Eighteen
+22. Demo Layout Nineteen
+23. Demo Layout Twenty
+24. Demo Layout Twenty One
+25. Demo Layout Twenty Two
+26. Demo Layout Twenty Three
+27. Demo Layout Twenty Four
+28. Demo Layout Twenty Five
+29. Demo Layout Twenty Six
+30. Demo Layout Twenty Seven
+31. Demo Layout Twenty Eight
+32. Demo Layout Twenty Nine
+33. Demo Layout Thirty
+34. Demo Layout Thirty One
+35. Demo Layout Thirty Two
+36. Demo Layout Thirty Three
+37. Demo Layout Thirty Four
+38. Demo Layout Thirty Five
+39. Demo Layout Thirty Six
+
+**************************************/
+/*=======================================================================
+1. Typography
+=========================================================================*/
+html {
+    height: 100%;
+  }
+  body {
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    height: 100%;
+    line-height: 1.7;
+    vertical-align: baseline;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    color: #646464;
+    background-color: #fff;
+  }
+  p {
+    margin: 0 0 20px 0;
+    color: #646464;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+    margin: 0 0 20px 0;
+    color: #111;
+  }
+  h1,
+  h2 {
+    line-height: 1.2;
+  }
+  h3,
+  h4,
+  h5,
+  h6 {
+    line-height: 1.4;
+  }
+  h1 {
+    font-size: 36px;
+  }
+  @media only screen and (max-width: 1199px) {
+    h1 {
+      font-size: 34px;
+    }
+  }
+  @media only screen and (max-width: 991px) {
+    h1 {
+      font-size: 32px;
+    }
+  }
+  @media only screen and (max-width: 767px) {
+    h1 {
+      font-size: 30px;
+    }
+  }
+  h2 {
+    font-size: 28px;
+  }
+  @media only screen and (max-width: 1199px) {
+    h2 {
+      font-size: 26px;
+    }
+  }
+  @media only screen and (max-width: 991px) {
+    h2 {
+      font-size: 24px;
+    }
+  }
+  @media only screen and (max-width: 767px) {
+    h2 {
+      font-size: 22px;
+    }
+  }
+  h3 {
+    font-size: 22px;
+  }
+  @media only screen and (max-width: 991px) {
+    h3 {
+      font-size: 20px;
+    }
+  }
+  @media only screen and (max-width: 767px) {
+    h3 {
+      font-size: 18px;
+    }
+  }
+  h4 {
+    font-size: 20px;
+  }
+  @media only screen and (max-width: 991px) {
+    h4 {
+      font-size: 18px;
+    }
+  }
+  @media only screen and (max-width: 767px) {
+    h4 {
+      font-size: 16px;
+    }
+  }
+  h5 {
+    font-size: 18px;
+  }
+  @media only screen and (max-width: 991px) {
+    h5 {
+      font-size: 16px;
+    }
+  }
+  
+  /*Preloader Styles End*/
+  /*========================================================================
+  3. Template Animation
+  =========================================================================*/
+  .fxt-template-animation {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    opacity: 0;
+    overflow: hidden;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+  .fxt-template-animation .fxt-opacity {
+    opacity: 0;
+  }
+  .fxt-template-animation .fxt-transformY-50 {
+    opacity: 0;
+    -webkit-transform: translateY(50px);
+    -ms-transform: translateY(50px);
+    transform: translateY(50px);
+  }
+  .fxt-template-animation .fxt-transformX-L-50 {
+    opacity: 0;
+    -webkit-transform: translateX(-50px);
+    -ms-transform: translateX(-50px);
+    transform: translateX(-50px);
+  }
+  .fxt-template-animation .fxt-transformX-R-50 {
+    opacity: 0;
+    -webkit-transform: translateX(50px);
+    -ms-transform: translateX(50px);
+    transform: translateX(50px);
+  }
+  .loaded.fxt-template-animation {
+    opacity: 1;
+  }
+  .loaded.fxt-template-animation .fxt-opacity {
+    opacity: 1;
+    -webkit-transition: all 1.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+    -o-transition: all 1.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition: all 1.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+  }
+  .loaded.fxt-template-animation .fxt-transformY-50 {
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+    -webkit-transition: all 1.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+    -o-transition: all 1.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition: all 1.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+  }
+  .loaded.fxt-template-animation .fxt-transformX-L-50 {
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+    -webkit-transition: all 1.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+    -o-transition: all 1.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition: all 1.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+  }
+  .loaded.fxt-template-animation .fxt-transformX-R-50 {
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+    -webkit-transition: all 1.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+    -o-transition: all 1.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition: all 1.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+  }
+  
+  .loaded.fxt-template-animation .fxt-transition-delay-1 {
+    -webkit-transition-delay: 0.1s;
+    -o-transition-delay: 0.1s;
+    transition-delay: 0.1s;
+  }
+  .loaded.fxt-template-animation .fxt-transition-delay-2 {
+    -webkit-transition-delay: 0.2s;
+    -o-transition-delay: 0.2s;
+    transition-delay: 0.2s;
+  }
+  .loaded.fxt-template-animation .fxt-transition-delay-3 {
+    -webkit-transition-delay: 0.3s;
+    -o-transition-delay: 0.3s;
+    transition-delay: 0.3s;
+  }
+  .loaded.fxt-template-animation .fxt-transition-delay-4 {
+    -webkit-transition-delay: 0.4s;
+    -o-transition-delay: 0.4s;
+    transition-delay: 0.4s;
+  }
+  .loaded.fxt-template-animation .fxt-transition-delay-5 {
+    -webkit-transition-delay: 0.5s;
+    -o-transition-delay: 0.5s;
+    transition-delay: 0.5s;
+  }
+  .loaded.fxt-template-animation .fxt-transition-delay-6 {
+    -webkit-transition-delay: 0.6s;
+    -o-transition-delay: 0.6s;
+    transition-delay: 0.6s;
+  }
+  .loaded.fxt-template-animation .fxt-transition-delay-7 {
+    -webkit-transition-delay: 0.7s;
+    -o-transition-delay: 0.7s;
+    transition-delay: 0.7s;
+  }
+  .loaded.fxt-template-animation .fxt-transition-delay-8 {
+    -webkit-transition-delay: 0.8s;
+    -o-transition-delay: 0.8s;
+    transition-delay: 0.8s;
+  }
+  .loaded.fxt-template-animation .fxt-transition-delay-9 {
+    -webkit-transition-delay: 0.9s;
+    -o-transition-delay: 0.9s;
+    transition-delay: 0.9s;
+  }
+  .loaded.fxt-template-animation .fxt-transition-delay-10 {
+    -webkit-transition-delay: 1s;
+    -o-transition-delay: 1s;
+    transition-delay: 1s;
+  }
+  .loaded.fxt-template-animation .fxt-transition-delay-11 {
+    -webkit-transition-delay: 1.1s;
+    -o-transition-delay: 1.1s;
+    transition-delay: 1.1s;
+  }
+  .loaded.fxt-template-animation .fxt-transition-delay-12 {
+    -webkit-transition-delay: 1.2s;
+    -o-transition-delay: 1.2s;
+    transition-delay: 1.2s;
+  }
+  .loaded.fxt-template-animation .fxt-transition-delay-13 {
+    -webkit-transition-delay: 1.3s;
+    -o-transition-delay: 1.3s;
+    transition-delay: 1.3s;
+  }
+  .loaded.fxt-template-animation .fxt-transition-delay-14 {
+    -webkit-transition-delay: 1.4s;
+    -o-transition-delay: 1.4s;
+    transition-delay: 1.4s;
+  }
+  .loaded.fxt-template-animation .fxt-transition-delay-15 {
+    -webkit-transition-delay: 1.5s;
+    -o-transition-delay: 1.5s;
+    transition-delay: 1.5s;
+  }
+  .loaded.fxt-template-animation .fxt-transition-delay-16 {
+    -webkit-transition-delay: 1.6s;
+    -o-transition-delay: 1.6s;
+    transition-delay: 1.6s;
+  }
+  .loaded.fxt-template-animation .fxt-transition-delay-17 {
+    -webkit-transition-delay: 1.7s;
+    -o-transition-delay: 1.7s;
+    transition-delay: 1.7s;
+  }
+  .loaded.fxt-template-animation .fxt-transition-delay-18 {
+    -webkit-transition-delay: 1.8s;
+    -o-transition-delay: 1.8s;
+    transition-delay: 1.8s;
+  }
+  .loaded.fxt-template-animation .fxt-transition-delay-19 {
+    -webkit-transition-delay: 1.9s;
+    -o-transition-delay: 1.9s;
+    transition-delay: 1.9s;
+  }
+  .loaded.fxt-template-animation .fxt-transition-delay-20 {
+    -webkit-transition-delay: 2s;
+    -o-transition-delay: 2s;
+    transition-delay: 2s;
+  }
+  
+    
+  /*========================================================================
+  36. Demo Layout Thirty Three
+  =========================================================================*/
+  .d-none{
+    display: none;
+  }
+  
+  .alert {
+  
+    max-width: 90%;
+    border-radius: 12px;
+    padding: 16px 22px 17px 20px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .alert-success {
+    background: #54D39D;
+  }
+  
+  .alert .icon__wrapper {
+    width: 100px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.253);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .alert .icon__wrapper span {
+    font-size: 21px;
+    color: #fff;
+  }
+  .alert p {
+    color: #fff;
+    font-family: Verdana;
+    margin-left: 10px;
+  }
+  .alert p a,
+  .alert p a:visited,
+  .alert p a:active {
+    color: #fff;
+  }
+  .alert .open {
+    margin-left: auto;
+    margin-right: 5px;
+  }
+  .alert .close, .alert .open {
+    color: #fff;
+    transition: transform 0.5s;
+    font-size: 18px;
+    cursor: pointer;
+  }
+  .alert .close:hover, .alert .open:hover {
+    transform: scale(1.3);
+  }
+  
+  .fxt-template-layout33 {
+    background-color: #ffffff;
+    width: 100%;
+    min-height: 100vh;
+    display: -ms-grid;
+    display: grid;
+    position: relative;
+    z-index: 1;
+  }
+  .fxt-template-layout33 .fxt-content-wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  @media only screen and (max-width: 991px) {
+    .fxt-template-layout33 .fxt-content-wrap {
+      display: block;
+    }
+  }
+  .fxt-template-layout33 .fxt-heading-content {
+    padding: 30px;
+    position: relative;
+    width: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+  @media only screen and (max-width: 991px) {
+    .fxt-template-layout33 .fxt-heading-content {
+      width: 100%;
+    }
+  }
+  @media only screen and (max-width: 575px) {
+    .fxt-template-layout33 .fxt-heading-content {
+      padding: 15px;
+    }
+  }
+  .fxt-template-layout33 .fxt-heading-content:before {
+    content: "";
+    border-radius: 0 100px 100px 0;
+    position: absolute;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("../IMG/ImagenBitacora.jpg");
+    top: 0;
+    left: 0;
+  }
+  
+  @media only screen and (max-width: 991px) {
+    .fxt-template-layout33 .fxt-heading-content:before {
+      border-radius: 0;
+    }
+  }
+  .fxt-template-layout33 .fxt-heading-content .fxt-inner-wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    max-height: 680px;
+    height: 100%;
+    padding: 60px 50px;
+    border-radius: 30px;
+    max-width: 515px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  @media only screen and (max-width: 575px) {
+    .fxt-template-layout33 .fxt-heading-content .fxt-inner-wrap {
+      padding: 40px 30px;
+      border-radius: 15px;
+    }
+  }
+  .fxt-template-layout33 .fxt-heading-content .fxt-logo {
+    margin-bottom: 30px;
+    display: block;
+    max-width: 35vw;
+  }
+  .fxt-template-layout33 .fxt-heading-content .fxt-sub-title {
+    color: #ffffff;
+    margin-bottom: 5px;
+    font-size: 24px;
+    font-weight: 300;
+  }
+  @media only screen and (max-width: 767px) {
+    .fxt-template-layout33 .fxt-heading-content .fxt-sub-title {
+      font-size: 22px;
+    }
+  }
+  .fxt-template-layout33 .fxt-heading-content .fxt-main-title {
+    color: #ffffff;
+    margin-bottom: 10px;
+    font-size: 36px;
+    font-weight: 600;
+  }
+  @media only screen and (max-width: 991px) {
+    .fxt-template-layout33 .fxt-heading-content .fxt-main-title {
+      font-size: 30px;
+    }
+  }
+  @media only screen and (max-width: 767px) {
+    .fxt-template-layout33 .fxt-heading-content .fxt-main-title {
+      font-size: 28px;
+    }
+  }
+  .fxt-template-layout33 .fxt-heading-content .fxt-description {
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 300;
+    max-width: 390px;
+    width: 100%;
+  }
+  .fxt-template-layout33 .fxt-heading-content .fxt-switcher-description {
+    font-size: 16px;
+    font-weight: 300;
+    color: #ffffff;
+  }
+  .fxt-template-layout33 .fxt-heading-content .fxt-switcher-description .fxt-switcher-text {
+    display: table;
+    color: #ffffff;
+    font-weight: 500;
+  }
+  .fxt-template-layout33 .fxt-heading-content .fxt-switcher-description .fxt-switcher-text:hover {
+    text-decoration: underline;
+  }
+  .fxt-template-layout33 .fxt-form-content {
+    width: 50%;
+  }
+  @media only screen and (max-width: 991px) {
+    .fxt-template-layout33 .fxt-form-content {
+      width: 100%;
+    }
+  }
+  .fxt-template-layout33 .fxt-form-content .fxt-page-title {
+    margin-bottom: 15px;
+    font-size: 36px;
+    font-weight: 700;
+    color: #14133b;
+  }
+  @media only screen and (max-width: 1199px) {
+    .fxt-template-layout33 .fxt-form-content .fxt-page-title {
+      font-size: 32px;
+    }
+  }
+  @media only screen and (max-width: 991px) {
+    .fxt-template-layout33 .fxt-form-content .fxt-page-title {
+      font-size: 30px;
+    }
+  }
+  @media only screen and (max-width: 767px) {
+    .fxt-template-layout33 .fxt-form-content .fxt-page-title {
+      font-size: 28px;
+    }
+  }
+  @media only screen and (max-width: 575px) {
+    .fxt-template-layout33 .fxt-form-content .fxt-page-title {
+      font-size: 26px;
+    }
+  }
+  @media only screen and (max-width: 479px) {
+    .fxt-template-layout33 .fxt-form-content .fxt-page-title {
+      font-size: 24px;
+    }
+  }
+  .fxt-template-layout33 .fxt-form-content .fxt-description {
+    font-size: 17px;
+    font-weight: 500;
+    margin-bottom: 30px;
+  }
+  .fxt-template-layout33 .fxt-form-content .fxt-label {
+    color: #14133b;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 12px;
+  }
+  .fxt-template-layout33 .fxt-form-content .fxt-main-form {
+    padding: 50px 65px 40px 65px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 100%;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  @media only screen and (max-width: 991px) {
+    .fxt-template-layout33 .fxt-form-content .fxt-main-form {
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+    }
+  }
+  @media only screen and (max-width: 575px) {
+    .fxt-template-layout33 .fxt-form-content .fxt-main-form {
+      padding: 40px 15px 30px;
+    }
+  }
+  .fxt-template-layout33 .fxt-form-content .fxt-inner-wrap {
+    max-width: 454px;
+    width: 100%;
+  }
+  .fxt-template-layout33 .fxt-form-content .form-group {
+    position: relative;
+    z-index: 1;
+    margin-bottom: 30px;
+  }
+  .fxt-template-layout33 .fxt-form-content .form-control {
+    min-height: 50px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border: 1px solid #e7e7e7;
+    padding: 10px 15px;
+    color: #111;
+  }
+  .fxt-template-layout33 .fxt-form-content input::-webkit-input-placeholder {
+    color: #acacac;
+    font-size: 17px;
+    font-weight: 400;
+  }
+  .fxt-template-layout33 .fxt-form-content input::-moz-placeholder {
+    color: #acacac;
+    font-size: 17px;
+    font-weight: 400;
+  }
+  .fxt-template-layout33 .fxt-form-content input:-moz-placeholder {
+    color: #acacac;
+    font-size: 17px;
+    font-weight: 400;
+  }
+  .fxt-template-layout33 .fxt-form-content input:-ms-input-placeholder {
+    color: #acacac;
+    font-size: 17px;
+    font-weight: 400;
+  }
+  .fxt-template-layout33 .fxt-form-content .fxt-otp-row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+  }
+  .fxt-template-layout33 .fxt-form-content .fxt-otp-row .fxt-otp-col {
+    padding: 10px 5px;
+    text-align: center;
+    margin-right: 30px;
+    -ms-flex-preferred-size: 0;
+    flex-basis: 0;
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+  }
+  .fxt-template-layout33 .fxt-form-content .fxt-otp-row .fxt-otp-col:last-child {
+    margin-right: 0;
+  }
+  .fxt-template-layout33 .fxt-form-content .fxt-otp-btn {
+    margin-bottom: 20px;
+  }
+  .fxt-template-layout33 .fxt-form-content .fxt-switcher-description {
+    text-align: center;
+    font-size: 16px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    color: #646464;
+  }
+  .fxt-template-layout33 .fxt-form-content .fxt-switcher-text {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+    padding: 0;
+    color: #39a688;
+    font-size: 15px;
+    font-weight: 500;
+    display: inline-block;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+  .fxt-template-layout33 .fxt-form-content .fxt-switcher-text:hover {
+    color: #099e74;
+    text-decoration: underline;
+  }
+  .fxt-template-layout33 .fxt-form-content .fxt-switcher-text:focus {
+    outline: none;
+  }
+  .fxt-template-layout33 .fxt-form-content .fxt-checkbox-box {
+    margin-bottom: 25px;
+  }
+  .fxt-template-layout33 .fxt-form-content .fxt-checkbox-box label {
+    color: #14133b;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 500;
+    position: relative;
+  }
+  .fxt-template-layout33 .fxt-form-content .fxt-checkbox-box label:before {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 5px;
+    left: 0;
+    right: 0;
+    border: 1px solid;
+    border-color: #dcdcdc;
+    border-radius: 3px;
+    background-color: #fff;
+    -webkit-transition: border 0.15s ease-in-out, color 0.15s ease-in-out;
+    -o-transition: border 0.15s ease-in-out, color 0.15s ease-in-out;
+    transition: border 0.15s ease-in-out, color 0.15s ease-in-out;
+  }
+  .fxt-template-layout33 .fxt-form-content .fxt-checkbox-box label:after {
+    position: absolute;
+    font-size: 10px;
+    color: #555555;
+  }
+  .fxt-template-layout33 .fxt-form-content .fxt-checkbox-box input[type="checkbox"] {
+    display: none;
+  }
+  .fxt-template-layout33 .fxt-form-content .fxt-checkbox-box input[type="checkbox"]:checked + label::after {
+    font-family: 'Font Awesome 5 Free';
+    content: "\f00c";
+    font-weight: 900;
+    color: #ffffff;
+    left: 0;
+    right: 0;
+    top: 5px;
+    width: 16px;
+    text-align: center;
+  }
+  .fxt-template-layout33 .fxt-form-content .fxt-checkbox-box input[type="checkbox"]:checked + label::before {
+    background-color: #1ebe92;
+    border-color: #1ebe92;
+  }
+  .fxt-template-layout33 .fxt-form-content .fxt-btn-fill {
+    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 17px;
+    font-weight: 500;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    outline: none;
+    border: 1px solid;
+    border-color: #1ebe92;
+    color: #fff;
+    border-radius: 10px;
+    background-color: #1ebe92;
+    padding: 9px 36px;
+    width: 100%;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+  .fxt-template-layout33 .fxt-form-content .fxt-btn-fill:hover {
+    background-color: #099e74;
+    border-color: #099e74;
+  }
+  .fxt-template-layout33 .fxt-form-content .fxt-btn-fill:focus {
+    outline: none;
+  }
+  @media only screen and (max-width: 767px) {
+    .fxt-template-layout33 .fxt-form-content .fxt-btn-fill {
+      font-size: 16px;
+    }
+  }
+  .fxt-template-layout33 .fxt-form-content .fxt-divider-text {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .fxt-template-layout33 .fxt-form-content .fxt-login-option ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin-left: -5px;
+    margin-right: -5px;
+  }
+  @media only screen and (max-width: 575px) {
+    .fxt-template-layout33 .fxt-form-content .fxt-login-option ul {
+      display: block;
+    }
+  }
+  .fxt-template-layout33 .fxt-form-content .fxt-login-option ul li {
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-bottom: 10px;
+    width: auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+  @media only screen and (max-width: 575px) {
+    .fxt-template-layout33 .fxt-form-content .fxt-login-option ul li {
+      width: 100%;
+    }
+  }
+  .fxt-template-layout33 .fxt-form-content .fxt-login-option ul li a {
+    padding: 10px 15px;
+    color: #ffffff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    min-height: 50px;
+    width: 50px;
+    border-radius: 10px;
+    font-size: 15px;
+  }
+  @media only screen and (max-width: 767px) {
+    .fxt-template-layout33 .fxt-form-content .fxt-login-option ul li a {
+      min-height: 47px;
+    }
+  }
+  @media only screen and (max-width: 575px) {
+    .fxt-template-layout33 .fxt-form-content .fxt-login-option ul li a {
+      width: 100%;
+    }
+  }
+  .fxt-template-layout33 .fxt-form-content .fxt-login-option ul li a .fxt-option-icon {
+    display: inline-block;
+  }
+  .fxt-template-layout33 .fxt-form-content .fxt-login-option ul li a .fxt-option-text {
+    display: inline-block;
+    display: none;
+  }
+  @media only screen and (max-width: 575px) {
+    .fxt-template-layout33 .fxt-form-content .fxt-login-option ul li a .fxt-option-text {
+      display: block;
+    }
+  }
+  .fxt-template-layout33 .fxt-form-content .fxt-login-option ul li.fxt-google a {
+    background-color: #CC3333;
+  }
+  .fxt-template-layout33 .fxt-form-content .fxt-login-option ul li.fxt-google a:hover {
+    background-color: #af2121;
+  }
+  .fxt-template-layout33 .fxt-form-content .fxt-login-option ul li.fxt-facebook a {
+    background-color: #3b5998;
+  }
+  .fxt-template-layout33 .fxt-form-content .fxt-login-option ul li.fxt-facebook a:hover {
+    background-color: #263f75;
+  }
+  .fxt-template-layout33 .fxt-form-content .fxt-login-option ul li.fxt-apple a {
+    background-color: #132133;
+  }
+  .fxt-template-layout33 .fxt-form-content .fxt-login-option ul li.fxt-apple a:hover {
+    background-color: #070e16;
+  }
+  .fxt-template-layout33 .fxt-form-content .fxt-login-option ul li.active {
+    width: 100%;
+  }
+  .fxt-template-layout33 .fxt-form-content .fxt-login-option ul li.active a {
+    width: 100%;
+  }
+  .fxt-template-layout33 .fxt-form-content .fxt-login-option ul li.active a .fxt-option-text {
+    display: block;
+  }
+  .fxt-template-layout33.fxt-template-animation .fxt-heading-content:before {
+    opacity: 0;
+    visibility: hidden;
+  }
+  .fxt-template-layout33.loaded.fxt-template-animation .fxt-heading-content:before {
+    opacity: 1;
+    visibility: visible;
+    -webkit-transition: opacity 1.5s ease-in-out;
+    -o-transition: opacity 1.5s ease-in-out;
+    transition: opacity 1.5s ease-in-out;
+    -webkit-transition-delay: 0.3s;
+    -o-transition-delay: 0.3s;
+    transition-delay: 0.3s;
+  }
