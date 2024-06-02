@@ -1,0 +1,102 @@
+
+.micro-5-regular {
+    font-family: "Micro 5", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .Perfil{
+    cursor: pointer !important;
+    font-size: 1.1em !important;
+  }
+  
+.btnPersonalizado{
+    font-weight: 100;
+    font-size: 14px;
+    padding: 10px 30px;
+    box-shadow: rgb(0, 0, 0) -2px -2px 2px 2px;
+    border-radius: 50px;
+    transition : 1000ms;
+    transform: translateY(0);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-transform: uppercase;
+    margin-top: 30px;
+}
+
+   
+    .btnPersonalizado:hover{
+    transition : 700ms;
+    padding: 10px 50px;
+    transform : translateY(-0px);
+    border: solid 2px #0066cc;
+    }
+
+    .btnPersonalizadoP{
+      padding: 10px 30px;
+      box-shadow: rgb(0, 0, 0) -2px -2px 2px 2px;
+      transition : 700ms;
+      transform: translateY(0);
+      align-items: center;
+      text-transform: uppercase;
+  }
+  
+     
+      .btnPersonalizadoP:hover{
+      transition : 700ms;
+      padding: 10px 50px;
+      transform : translateY(-5px);
+      border: solid 2px #0066cc;
+      }  
+
+.bg-darkP{
+    background: linear-gradient(90deg, #000000 0%, #969696 100%);
+
+}
+.bg-dangerP{
+    background: linear-gradient(90deg, #f34c05 0%, #cc0000 100%);
+}
+.bg-successP{
+    background: linear-gradient(90deg, #00cc00 0%, #00ccc5 100%);
+}
+.bg-infoP{
+    background: linear-gradient(90deg, #14cefd 0%, #2056cc 100%);
+}
+.bg-warningP{
+    background: linear-gradient(90deg, #cc7a00 0%, #dcf402 100%);
+}
+.bg-purpleP{
+  background: linear-gradient(90deg, #900fe6 0%, #ee28ee 100%);
+}
+.bg-blueP{
+  background: linear-gradient(90deg, #2056cc 0%, #14cefd 100%);
+}
+
+.miniFoto{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid #000000;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900');
+
+body{
+	font-family: 'Poppins', sans-serif;
+	font-size: 20px;
+	line-height: 1.7;
+	color: #1f2029;
+	background-color: #ffffff;
+	overflow-x: hidden;
+}
+h6 span{
+  padding: 0 20px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.section{
+  position: relative;
+  width: 100%;
+  display: block;
+}

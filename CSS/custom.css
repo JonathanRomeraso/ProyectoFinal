@@ -49,6 +49,71 @@ a.footer {
 	display: none !important;
 }
 
+
+  
+.btnPersonalizado{
+    font-weight: 100;
+    font-size: 14px;
+    padding: 10px 30px;
+    box-shadow: rgb(0, 0, 0) -2px -2px 2px 2px;
+    border-radius: 50px;
+    transition : 1000ms;
+    transform: translateY(0);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-transform: uppercase;
+    margin-top: 30px;
+}
+
+   
+    .btnPersonalizado:hover{
+    transition : 700ms;
+    padding: 10px 50px;
+    transform : translateY(-0px);
+    border: solid 2px #0066cc;
+    }
+
+    .btnPersonalizadoP{
+      padding: 10px 30px;
+      box-shadow: rgb(0, 0, 0) -2px -2px 2px 2px;
+      transition : 700ms;
+      transform: translateY(0);
+      align-items: center;
+      text-transform: uppercase;
+  }
+  
+     
+      .btnPersonalizadoP:hover{
+      transition : 700ms;
+      padding: 10px 50px;
+      transform : translateY(-5px);
+      border: solid 2px #0066cc;
+      }  
+
+.bg-darkP{
+    background: linear-gradient(90deg, #000000 0%, #969696 100%);
+
+}
+.bg-dangerP{
+    background: linear-gradient(90deg, #f34c05 0%, #cc0000 100%);
+}
+.bg-successP{
+    background: linear-gradient(90deg, #00cc00 0%, #00ccc5 100%);
+}
+.bg-infoP{
+    background: linear-gradient(90deg, #14cefd 0%, #2056cc 100%);
+}
+.bg-warningP{
+    background: linear-gradient(90deg, #cc7a00 0%, #dcf402 100%);
+}
+.bg-purpleP{
+  background: linear-gradient(90deg, #900fe6 0%, #ee28ee 100%);
+}
+.bg-blueP{
+  background: linear-gradient(90deg, #2056cc 0%, #14cefd 100%);
+}
+
 /*****************************/
 /*  02. PRELOADER            */
 /*****************************/
@@ -391,6 +456,7 @@ a.footer {
 		color: #1b1b1b;
 		padding: 0.75rem 1rem 0.75rem 2rem;
 		height: 3.225rem;
+		text-align-last: center;
 		transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
 	}
 
@@ -771,6 +837,46 @@ a.footer {
 /*****************************/
 /*  06. ANIMACION FORM       */
 /*****************************/
+[type="checkbox"]:checked,
+[type="checkbox"]:not(:checked){
+  position: absolute;
+  left: -9999px;
+}
+.checkbox:checked + label,
+.checkbox:not(:checked) + label{
+  position: relative;
+  display: block;
+  text-align: center;
+  width: 60px;
+  height: 16px;
+  border-radius: 8px;
+  padding: 0;
+  margin: 10px auto;
+  cursor: pointer;
+  background-color: #0dcaf0;
+}
+.checkbox:checked + label:before,
+.checkbox:not(:checked) + label:before{
+  position: absolute;
+  display: block;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  color: #102770;
+  background-color: #102770;
+  font-family: 'unicons';
+  content: '\eb4f';
+  z-index: 20;
+  top: -10px;
+  left: -10px;
+  line-height: 36px;
+  text-align: center;
+  font-size: 24px;
+  transition: all 0.5s ease;
+}
+.checkbox:checked + label:before {
+  transform: translateX(44px) rotate(-270deg);
+}
 
 .card-3d-wrap {
 	position: relative;
