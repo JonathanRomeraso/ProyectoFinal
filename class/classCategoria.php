@@ -63,7 +63,7 @@ class Categoria extends baseDatos{
                 }
                 break;           
             case'report':
-                $result = $this->despTablaDatos("SELECT id_categoria, categoria FROM categoria  where id_usuario = ".$_SESSION['id']." order by categoria limit 1;");
+                $result = $this->despTablaDatosNoEdit("SELECT id_categoria, categoria FROM categoria  where id_usuario = ".$_SESSION['id']." order by categoria limit 1;");
                 break;
             case'delete':
                 $this->query("DELETE FROM Categoria WHERE id_categoria=".$_POST['IdCategoria']."AND id_usuario=".$_POST['IdCategoria']);
@@ -106,6 +106,27 @@ class Categoria extends baseDatos{
         $datoss.="</tbody> </table> ";
         return $html.$datoss;
     }
+    function despTablaDatosNoEdit($query){
+        $flag = true;
+        $html=' <div class="col-md-8 col-sm-12">
+                    <h2 class="tm-block-title d-inline-block">Categorias Creadas</h2>
+                </div>
+                <table class="table table-hover table-striped mt-3"> <tbody>';
+        $this->query($query);
+        $datoss= "";     
+        foreach ($this->a_bloqRegistros as $row) {
+            $datoss.='<tr>';
+            foreach ($row as $datos) {
+                ($flag) ? $datoss.='<td hidden>'.($datos)."</td> " : $datoss.='<td>'.strtoupper($datos)."</td>";
+                $flag = false;
+            }                      
+            $flag = true;
+            $datoss.="</tr>";
+        }
+        $datoss.="</tbody> </table> ";
+        return $html.$datoss;
+    }
+
 
 }
 

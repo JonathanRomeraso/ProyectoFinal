@@ -1,8 +1,7 @@
-<?
+<?php
 session_start();
 if(!isset($_SESSION['nombre']) || !$_SESSION['admin']){
   header("location: ../index.php?m=200");
-  //var_dump($_SESSION);
 }
 
 

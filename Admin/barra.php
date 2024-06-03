@@ -19,11 +19,12 @@
     <link rel="stylesheet" href="../Template/css/tooplate.css?0.02">
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.min.js"></script>
+    <script src="../controllers/transaccion.js?2024.001"></script>
 
 </head> 
 <body>
 <nav class="navbar navbar-expand-xl navbar-light bg-light">
-                        <a class="navbar-brand">
+                        <a class="navbar-brand" href="home.php">
                             <img src="../IMG/Logo.svg" alt="Logo">
                             <h1 class="tm-site-title mb-0">GastoTrack</h1>
                         </a>
@@ -34,14 +35,10 @@
 
                         <div class="collapse navbar-collapse" id="navbarSupportedContent" style="font-size:0.9rem;">
                             <ul class="navbar-nav mx-auto">
-                                <li class="nav-item active">
-                                    <a class="nav-link" href="home.php">Home
-                                    </a>
-                                </li>
                                 <li class="nav-item dropdown">
                                     <a class="nav-link" href="home.php">Reportes</a>
                                 </li>
-                                <li class="nav-item active">
+                                <li class="nav-item ">
                                     <a class="nav-link" href="categorias.php">Categorias</a>
                                 </li>
                                 <li class="nav-item">
@@ -84,7 +81,6 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.4/jquery-confirm.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.4/jquery-confirm.min.js"></script>
-    <script src="../controllers/categorias.js?2024.001"></script>
     
 </body>
 
