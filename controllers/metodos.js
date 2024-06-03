@@ -1,6 +1,6 @@
 var ventFrame;
 var ventFrame1;
-function categoriass(cual, id, id_categoria, texto){
+function metodoss(cual, id, texto){
     if(typeof(id)=="undefined")
         id= 0;
     switch (cual) {
@@ -9,21 +9,20 @@ function categoriass(cual, id, id_categoria, texto){
                     title: 'Editar',
                     columnClass: "col-7",
                     type: "orange",
-                    content: 'url:../class/classCategoria.php?action=' + cual + "&Id=" + id+ "&IdCategoria=" + id_categoria,
+                    content: 'url:../class/classMetodos.php?action=' + cual + "&Id=" + id,
                     onContentReady: function () { ventFrame1 = this; }
                 });
             break;
 
             case "update":
-                datos = $("#formCategoria").serialize();
+                datos = $("#formPalabras").serialize();
                 buttondisable.disabled = true;
-                $.ajax ({url:"../class/classCategoria.php", 
+                $.ajax ({url:"../class/classMetodos.php", 
                     type:"post", 
                     data:datos,
-                    success: function(html){
-                        console.log(html) 
+                    success: function(html){ 
                         ventFrame1.close();
-                        areaTrabajoCategoria.innerHTML = html;
+                        areaTrabajoMetodos.innerHTML = html;
                     }
                 });
                 return false 
@@ -34,39 +33,38 @@ function categoriass(cual, id, id_categoria, texto){
                     title: 'Agregar',
                     columnClass: "col-7",
                     type: "green",
-                    content: 'url:../class/classCategoria.php?action=' + cual + "&Id=" + id, 
+                    content: 'url:../class/classMetodos.php?action=formNew', 
                     onContentReady: function () { ventFrame = this; }
                 });
             break;
 
             case "insert":
-                datos = $("#formCategoria").serialize();
+                datos = $("#formPalabras").serialize();
                 buttondisable.disabled = true;
-                $.ajax ({url:"../class/classCategoria.php", 
+                $.ajax ({url:"../class/classMetodos.php", 
                     type:"post", 
                     data:datos,
                     success: function(html){ 
                         ventFrame.close();
-                        areaTrabajoCategoria.innerHTML = html;
+                        areaTrabajoMetodos.innerHTML = html;
                     }
                 });
                 return false 
             break;
 
             case "delete":
-            //Confirmar si se borra
             $.confirm({
                 title: 'Estas seguro de Borrar',
-                content:'El registro: '+id_categoria + "- " + texto,
+                content:'El registro: '+id + "- " + texto,
                 type:"red",
                 columnclass: "col-6",
                 buttons: {
                     confirm: function () {
-                        $.ajax ({url:"../class/classCategoria.php", 
+                        $.ajax ({url:"../class/classMetodos.php", 
                             type:"post", 
-                            data:{action:cual, Id:id, Id_categoria:id_categoria},
+                            data:{action:cual, Id:id},
                             success: function(html){
-                                areaTrabajoCategoria.innerHTML = html;
+                                areaTrabajoMetodos.innerHTML = html;
                                 alerta("Aviso", "El registro se borro!!!")
                             }
                         });
@@ -75,13 +73,13 @@ function categoriass(cual, id, id_categoria, texto){
                 }    
             })
             break;
-
+            
             case "valiForm": ;
             mensaje.innerHTML=""
-                if(inputCategoria.value>""){
+                if(inputPalabra.value>""){
                     return true
                 }else{
-                    mensaje.innerHTML="Asegurate de nombrar la categoria"
+                    mensaje.innerHTML="Asegurate de llenar Todos los campos"
                     //alert("Asegurate de llenar Todos los campos");
                     return false
                 }

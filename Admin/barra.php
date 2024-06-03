@@ -17,9 +17,7 @@
     <link rel="stylesheet" href="../Template/css/bootstrap.min.css">
     <!-- https://getbootstrap.com/ -->
     <link rel="stylesheet" href="../Template/css/tooplate.css?0.02">
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.min.js"></script>
-    <script src="../controllers/transaccion.js?2024.001"></script>
+
 
 </head> 
 <body>
@@ -36,6 +34,17 @@
                         <div class="collapse navbar-collapse" id="navbarSupportedContent" style="font-size:0.9rem;">
                             <ul class="navbar-nav mx-auto">
                                 <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                                        aria-expanded="false">
+                                        Reportes
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item" href="#">Daily Report</a>
+                                        <a class="dropdown-item" href="#">Weekly Report</a>
+                                        <a class="dropdown-item" href="#">Yearly Report</a>
+                                    </div>
+                                </li>    
+                                <li class="nav-item dropdown">
                                     <a class="nav-link" href="home.php">Reportes</a>
                                 </li>
                                 <li class="nav-item ">
@@ -44,9 +53,17 @@
                                 <li class="nav-item">
                                     <a class="nav-link" href="transaccion.php">Transacciones</a>
                                 </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="accounts.html">Instituciones</a>
-                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                                        aria-expanded="false">
+                                        Admin
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item" href="instituciones.php">Instituciones</a>
+                                        <a class="dropdown-item" href="usuarios.php">Usuarios</a>
+                                        <a class="dropdown-item" href="metodos.php">Metodos</a>
+                                    </div>
+                                </li>  
                             </ul>
                             <ul class="navbar-nav">
                                 <li class="nav-item">
@@ -60,17 +77,9 @@
                     </nav>
 
 
-    <script src="../Template/js/jquery-3.3.1.min.js"></script>
-    <!-- https://jquery.com/download/ -->
-    <script src="../Template/js/bootstrap.min.js"></script>
-    <!-- https://getbootstrap.com/ -->
-    <script>
-        $(function () {
-            $('.tm-product-name').on('click', function () {
-                window.location.href = "edit-product.html";
-            });
-        })
-    </script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.min.js"></script>
     <script src="../JS/jquery-3.6.0.min.js"></script>
     <script src="../JS/bootstrap.bundle.min.js"></script>
     <script src="../JS/jquery-confirm.js"></script>
@@ -82,6 +91,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.4/jquery-confirm.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.4/jquery-confirm.min.js"></script>
     
+    
+    <script src="../controllers/transaccion.js?2024.001"></script>
+    <script src="../controllers/categorias.js?2024.001"></script>
 </body>
 
 </html>
