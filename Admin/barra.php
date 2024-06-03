@@ -32,21 +32,19 @@
                         </button>
 
                         <div class="collapse navbar-collapse" id="navbarSupportedContent" style="font-size:0.9rem;">
-                            <ul class="navbar-nav mx-auto">
+                            <ul class="navbar-nav mx-auto">  
                                 <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                                    <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
                                         aria-expanded="false">
                                         Reportes
                                     </a>
                                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                        <a class="dropdown-item" href="#">Daily Report</a>
-                                        <a class="dropdown-item" href="#">Weekly Report</a>
-                                        <a class="dropdown-item" href="#">Yearly Report</a>
+                                        <a class="dropdown-item" href="reporte.php?action=anio">Por año</a>
+                                        <a class="dropdown-item" href="reporte.php?action=mes">Por Meses</a>
+                                        <a class="dropdown-item" href="reporte.php?action=reportdia">Por dia</a>
+                                        <a class="dropdown-item" href="reporte.php?action=dia">Buscar por dia</a>
                                     </div>
-                                </li>    
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link" href="home.php">Reportes</a>
-                                </li>
+                                </li> 
                                 <li class="nav-item ">
                                     <a class="nav-link" href="categorias.php">Categorias</a>
                                 </li>

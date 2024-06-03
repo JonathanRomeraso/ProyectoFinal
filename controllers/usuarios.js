@@ -34,7 +34,7 @@ function usuarioss(cual, id, texto){
                 $.dialog({
                     title: 'Agregar',
                     columnClass: "col-7",
-                    type: "red",
+                    type: "green",
                     content: 'url:../class/classUsuarios.php?action=formNew', 
                     onContentReady: function () { ventFrame = this; }
                 });
