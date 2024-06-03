@@ -63,7 +63,7 @@ class Categoria extends baseDatos{
                 }
                 break;           
             case'report':
-                $result = $this->despTablaDatosNoEdit("SELECT id_categoria, categoria FROM categoria  where id_usuario = ".$_SESSION['id']." order by categoria limit 1;");
+                $result = $this->despTablaDatosNoEdit("SELECT id_categoria, categoria FROM categoria  where id_usuario = ".$_SESSION['id']." order by categoria limit 3;");
                 break;
             case'delete':
                 $this->query("DELETE FROM Categoria WHERE id_categoria=".$_POST['Id_categoria']." AND id_usuario=".$_POST['Id']);

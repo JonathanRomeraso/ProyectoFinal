@@ -57,7 +57,7 @@ class Torneos extends baseDatos{
                                                 JOIN movimiento m on m.id_movimiento = t.id_movimiento
                                                 JOIN metodo_pago Bitacora on Bitacora.id_metodo_pago = t.id_metodo_pago
                                                 where t.id_usuario  = ".$_SESSION['id'].
-                                                " order by 2 desc limit 1;");               
+                                                " order by 2 desc limit 5;");               
                 break;
             case'delete':
                 $this->query("DELETE FROM transaccion WHERE id_transaccion=".$_POST['Id_transaccion']);
